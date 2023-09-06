@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+     <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Ricky | Advice generator app</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="w-screen h-screen bg-darkBlue flex items-center justify-center">
+    <div class="bg-darkGreyBlue mobile:w-80 w-72 px-6 pt-6 pb-1 rounded-xl relative">
+      <p class="text-lg text-neonGreen text-center mb-4 tracking-widest"> Advice
+      <span id="adviceNum">#1</span></p>
+      
+      <h2 class="text-3xl text-lightCyan text-center before:content-['\201C']
+      before:pr-1 after:pl-1
+      after:content-['\201D'] font-bold pb-7" id="advice"></h2>
+      
+      <div class="mt-5 mb-10">
+       <svg class="-translate-x-4 mobile:translate-x-0" width="275" height="16" xmlns="http://www.w3.org/2000/svg"><g
+       fill="none" fill-rule="evenodd"><path fill="#4F5D74" d="M0 8h122v1H0zM173
+       8h122v1H173z"/><g transform="translate(135)" fill="#CEE3E9"><rect
+       width="6" height="16" rx="3"/><rect x="14" width="6" height="16"
+       rx="3"/></g></g></svg>
+      </div>
+      
+      <div class="absolute transform right-28 -translate-y-6 translate-x-1
+      mobile:-translate-x-2">
+        <button id="advice-gen" class="rounded-full w-16 h-16 text-center
+        bg-neonGreen text-darkGreyBlue cursor-pointer flex items-center
+        justify-center">
+        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path
+        d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005
+        0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0
+        1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1
+        0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0
+        3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"
+        fill="#202733"/></svg></button>
+      </div>
+
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
